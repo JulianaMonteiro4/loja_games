@@ -33,7 +33,7 @@ public class Produto {
 	
 	@ManyToOne
 	@JsonIgnoreProperties("categoria")
-	private Categoria categotia;
+	private Categoria categoria;
 	
 	public Long getId() {
 		return id;
@@ -66,4 +66,14 @@ public class Produto {
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
 	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+	
+	
 }
